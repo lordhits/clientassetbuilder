@@ -1,0 +1,12 @@
+{
+  "name": "clientassetbuilder",
+  "version": "0.0.0",
+  "description": "",
+  "browserslist": [
+    "defaults"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "@hyas/doks": "0.2.1"
+  }
+}
