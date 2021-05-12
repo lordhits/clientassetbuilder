@@ -4,9 +4,18 @@
 <head>
     <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <title>Styleguide Header</title>
+    <meta name="description" content="Styleguide">
+    {{ if eq (hugo.Environment) "development" -}}
+        {{ $options := (dict "targetPath" "main.css" "enableSourceMap" true "includePaths" (slice "node_modules")) -}}
+        {{ $css := resources.Get "scss/app.scss" | toCSS $options -}}
+        <link rel="stylesheet" href="{{ $css.Permalink }}">
+    {{ else -}}
+        {{ $options := (dict "targetPath" "main.css" "outputStyle" "compressed" "includePaths" (slice "node_modules")) -}}
+        {{ $css := resources.Get "scss/app.scss" | toCSS $options | postCSS (dict "config" "config/postcss.config.js") -}}
+        {{ $secureCSS := $css | resources.Fingerprint "sha512" -}}
+        <link rel="stylesheet" href="{{ $secureCSS.Permalink }}" integrity="{{ $secureCSS.Data.Integrity }}" crossorigin="anonymous">
+    {{ end -}}
 </head>
 
 <body>
