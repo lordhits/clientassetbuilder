@@ -1,0 +1,63 @@
+// colors
+$g-aubergine:   #51284f;
+$g-gray:        #a7a8aa;
+$g-blue:        #5e8ab4;
+
+$primary:       $g-aubergine;
+$secondary:     $g-gray;
+
+// typography
+@font-face {
+    font-family: 'Guardian Regular';
+    src: url('../fonts/GuardianTextSans-Regular-Web.eot');
+    src: url('../fonts/GuardianTextSans-Regular-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianTextSans-Regular-Web.woff') format('woff'), url('../fonts/GuardianTextSans-Regular-Web.ttf') format('truetype'), url('../fonts/GuardianTextSans-Regular-Web.svg#Guardian TextSans Web') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  
+  @font-face {
+    font-family: 'Guardian Regular Web';
+    src: url('../fonts/GuardianSans-Regular-Web.eot');
+    src: url('../fonts/GuardianSans-Regular-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Regular-Web.woff') format('woff'), url('../fonts/GuardianSans-Regular-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Regular-Web.svg#Guardian Sans Web') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  
+  @font-face {
+    font-family: 'Guardian Light Web';
+    src: url('../fonts/GuardianSans-Light-Web.eot');
+    src: url('../fonts/GuardianSans-Light-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianSans-Light-Web.woff') format('woff'), url('../fonts/GuardianSans-Light-Web.ttf') format('truetype'), url('../fonts/GuardianSans-Light-Web.svg#Guardian Light Web') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  
+  @font-face {
+    font-family: 'Guardian Medium';
+    src: url('../fonts/GuardianTextSans-Medium-Web.eot');
+    src: url('../fonts/GuardianTextSans-Medium-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianTextSans-Medium-Web.woff') format('woff'), url('../fonts/GuardianTextSans-Medium-Web.ttf') format('truetype'), url('../fonts/GuardianTextSans-Medium-Web.svg#Guardian TextSans Web') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  
+  @font-face {
+    font-family: 'Egyptian Medium';
+    src: url('../fonts/GuardianEgyp-Medium-Web.eot');
+    src: url('../fonts/GuardianEgyp-Medium-Web.eot?#iefix') format('embedded-opentype'), url('../fonts/GuardianEgyp-Medium-Web.woff') format('woff'), url('../fonts/GuardianEgyp-Medium-Web.ttf') format('truetype'), url('../fonts/GuardianEgyp-Medium-Web.svg#Guardian Text Egyptian Web') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+  }
+  
+  @font-face {
+    font-family: 'WhitneyCond Light';
+    src: url('../fonts/WhitneyCond-Light.otf') format('opentype');
+    src: url('../fonts/WhitneyCondensed-Light.eot');
+    src: url('../fonts/WhitneyCondensed-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/WhitneyCondensed-Light.woff') format('woff'), url('../fonts/WhitneyCondensed-Light.ttf') format('truetype'), url('../fonts/WhitneyCondensed-Light.svg#WhitneyCond-Light') format('svg');
+  }
+
+$font-family-sans-serif:      "Guardian Regular Web", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
