@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Styleguide Header</title>
+    <title>Style - {{.Title}}</title>
     <meta name="description" content="Styleguide">
     {{ if eq (hugo.Environment) "development" -}}
-        {{ $options := (dict "targetPath" "main.css" "enableSourceMap" true "includePaths" (slice "node_modules")) -}}
+        {{ $options := (dict "targetPath" "style/main.css" "enableSourceMap" true "includePaths" (slice "node_modules")) -}}
         {{ $css := resources.Get "scss/app.scss" | toCSS $options -}}
         <link rel="stylesheet" href="{{ $css.Permalink }}">
     {{ else -}}
@@ -19,13 +19,10 @@
 </head>
 
 <body>
-    
-
-    <h1>{{ .Title }}</h1>
-
-    <div>{{ .Content }}</div>
-
-    
-    <script src="js/scripts.js"></script>
+    <div class="container">
+        <h1>{{ .Title }}</h1>
+        <div>{{ .Content }}</div>    
+        <script src="js/scripts.js"></script>
+    </div>
 </body>
 </html>
