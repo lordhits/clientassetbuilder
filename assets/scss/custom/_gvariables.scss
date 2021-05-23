@@ -6,6 +6,8 @@ $g-blue:        #5e8ab4;
 $primary:       $g-aubergine;
 $secondary:     $g-gray;
 
+$body-color:    #656569;
+
 // typography
 @font-face {
     font-family: 'Guardian Text Regular';
@@ -46,10 +48,7 @@ $secondary:     $g-gray;
 
 $font-family-sans-serif:  "Guardian Regular", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-sans-serif-light:  "Guardian Light", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-whitney-light:  "WhitneyCond Light", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $headings-font-family:    "Egyptian Medium";
 $headings-color:          $primary;
-
-.alt {
-  font-family: $font-family-sans-serif-light;
-}
