@@ -6,7 +6,14 @@
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "bootstrap/scss/variables";
+
+// after default variables, merge our custom colors to theme colors.
+@import "custom/colors";
+
 @import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
 
 // 4. Include any optional Bootstrap components as you like
 @import "bootstrap/scss/root";
@@ -41,5 +48,4 @@
 @import "bootstrap/scss/offcanvas";
 
 // 5. Add additional custom code here
-@import "custom/colors";
 @import "custom/typography";

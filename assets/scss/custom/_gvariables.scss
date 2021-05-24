@@ -11,6 +11,11 @@ $g-orange:      #d15f27;
 $g-gold:        #ebab21;
 $g-sand:        #b4a87d;
 $g-brown:       #804c37;
+$g-black:       #000;
+$g-backgroundgray: #e1e1e0;
+$g-red:         #ac1e2e;
+
+$g-blue-50: tint-color($g-blue, 50%) !default;
 
 $custom-colors: (
   "gray": $g-gray,
@@ -23,7 +28,10 @@ $custom-colors: (
   "orange": $g-orange,
   "gold": $g-gold,
   "sand": $g-sand,
-  "brown": $g-brown
+  "brown": $g-brown,
+  "black": $g-black,
+  "background-gray": $g-backgroundgray,
+  "red": $g-red
 );
 
 $primary:       $g-aubergine;
