@@ -2,6 +2,29 @@
 $g-aubergine:   #51284f;
 $g-gray:        #a7a8aa;
 $g-blue:        #5e8ab4;
+$g-green:       #719949;
+$g-darkgray:    #63666a;
+$g-darkblue:    #063b6f;
+$g-moss:        #55622b;
+$g-plum:        #881c55;
+$g-orange:      #d15f27;
+$g-gold:        #ebab21;
+$g-sand:        #b4a87d;
+$g-brown:       #804c37;
+
+$custom-colors: (
+  "gray": $g-gray,
+  "blue": $g-blue,
+  "green": $g-green,
+  "dark-gray": $g-darkgray,
+  "dark-blue": $g-darkblue,
+  "moss": $g-moss,
+  "plum": $g-plum,
+  "orange": $g-orange,
+  "gold": $g-gold,
+  "sand": $g-sand,
+  "brown": $g-brown
+);
 
 $primary:       $g-aubergine;
 $secondary:     $g-gray;
