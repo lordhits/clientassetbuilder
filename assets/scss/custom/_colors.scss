@@ -1,1 +1,15 @@
 $theme-colors: map-merge($theme-colors, $custom-colors);
+
+$utilities: (
+  "color-tint": (
+    property: background-color,
+    class: tint,
+    values: map-merge(
+        $theme-colors,
+        (
+          "20": tint-color($g-blue, 20%),
+          "50": tint-color($g-blue, 50%),
+        )
+    )
+   )
+); 
